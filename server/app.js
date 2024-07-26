@@ -61,7 +61,7 @@ app.set("io", io);
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors(corsOptions));
-app.use(express.static('dist'));
+
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/chat", chatRoute);
 app.use("/api/v1/admin", adminRoute);
